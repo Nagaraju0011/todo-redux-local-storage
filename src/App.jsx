@@ -1,10 +1,12 @@
 import "./App.css";
-
+import { Provider } from "react-redux";
+import store from "./store";
+import Counter from "./Counter";
 function App() {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <Provider store={store}>
+      <Counter />
+    </Provider>
   );
 }
 
